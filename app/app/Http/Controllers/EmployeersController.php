@@ -85,6 +85,13 @@ class EmployeersController extends Controller {
         return DeleteEmployeerAction::run( $id );
     }
 
+    /**
+     * Retrieve the command's members
+     *
+     * @param $managerId
+     *
+     * @return mixed
+     */
     public function getTheCommand($managerId) {
         return GetTheCommandAction::run($managerId);
     }
